@@ -1,0 +1,163 @@
+/*********Custom Fontes******/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@font-face{
+
+    font-family: Ethnocentric1;
+    src:url(../fontes/ethnocentric/ethnocentric\ rg\ it.otf);
+    
+}
+
+@font-face {
+
+    font-family: Ethnocentric2 ;
+    src: url(../fontes/ethnocentric/ethnocentric\ rg.otf);
+
+}
+
+@font-face {
+
+    font-family: jd_neos;
+    src: url(../fontes/jd_neos/jd_neos.ttf);
+
+}
+
+@font-face {
+
+    font-family: nasalization;
+    src: url(../fontes/nasalization/nasalization-rg.otf);
+
+}
+
+/*********Finish Custom Fontes******/
+
+*{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+body{
+
+    background-color: blue;
+    background-image: linear-gradient(to bottom , #272933, #393B4A, #2F313D ) ;
+    background-attachment: fixed;
+    
+}
+
+header{
+
+    margin-top: 10px;
+    width: 100%;
+    height: 10%;
+    display: inline-flex;
+    
+}
+
+#logo{
+
+    padding-left: 15px;
+    width:20%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+#logo h1{
+
+    font-style: normal;
+    font-size: 2em;
+    font-family: Ethnocentric1; 
+    color: white;
+
+}
+
+#logo h1 span{
+    
+    margin-left: 10px;
+    font-size: 2em;
+    font-family: nasalization; 
+    color: #0DF4FF;
+    
+}
+
+nav{
+    
+    padding-left: 200px;
+    width: 80%;
+    height: 100%;
+
+}
+
+nav a{
+
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+
+}
+
+nav a:hover{
+
+    text-decoration: underline solid white 2px ;
+    
+     
+}
+
+nav a span{
+
+    font-size: 1.5em;
+    color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 100px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+text-shadow: 0.4em 0.4em 0.5em #393B4A;
+    font-family: nasalization; fonte boa para o 42
+    font-family: jd_neos ; provavel alternativa para o 42
+    font-family: good_timing ; gordinha demais
+    font-family: game_of_squids_two ; estranha
+    font-family: game_of_squids; estranha 
+    font-family: fronter; ruim 
+    font-family: Ethnocentric2; boa para a parte savante porem é gordinha 
+
+*/
