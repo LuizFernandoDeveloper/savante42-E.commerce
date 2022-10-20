@@ -8,17 +8,98 @@ html{
 
 .section_main{
 
-    width: 100%;
-    height: 80px;
-    margin-top: 30px;
-    text-align: center; 
+  width: 100%;
+  height: 80px;
+  margin-top: 30px;
+  text-align: center; 
 
 }
 
-.section_main h1{
+.section_main span{
 
-    color: white;
-    font-size: large;
-    font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 110px;
 
 }
+.content{
+
+  width: 800px;
+  height:300px;
+  position: relative;
+  color: white;
+  margin: auto;
+
+}
+
+
+.content img {
+  
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  
+   
+}
+
+.content div {
+
+  width: auto;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  background-image: linear-gradient(to bottom , #2F313D,  #393B4A, #2F313D ) ;
+  top: 0px;
+  left: 35%;
+  transition: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 0px 0px 30px 30px;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.content #setaLeft{
+
+  border-radius: 0px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+  box-shadow: 2px -2px 0 0px white inset;
+  border: solid white;
+  border-width: 0 0 2px 2px;
+  transform: rotate(45deg);
+  left: -50px;
+  top: 40%;
+  background-image: none;
+
+}
+
+.content #setaRight{
+
+  border-radius: 0px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+  box-shadow: 2px -2px 0 0px white inset;
+  border: solid white;
+  border-width: 0 0 2px 2px;
+  transform: rotate(225deg);
+  left: 780px;
+  top: 40%;
+  background-image: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+

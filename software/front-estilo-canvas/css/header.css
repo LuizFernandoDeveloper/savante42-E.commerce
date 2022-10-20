@@ -41,7 +41,7 @@
 
 body{
 
-    background-color: blue;
+   
     background-image: linear-gradient(to bottom , #272933, #393B4A, #2F313D ) ;
     background-attachment: fixed;
     
@@ -120,7 +120,6 @@ nav a span{
     
         width: 80%;
         height: 100%;
-        background-color: blue;
         align-content: space-between;
     
     }
@@ -140,7 +139,6 @@ nav a span{
         padding-left: 15px;
         width:320px;
         height: 100%;
-        background-color: brown;
         
     }
 }
@@ -151,7 +149,6 @@ nav a span{
 
         width: 75%;
         height: 100%;
-        background-color: blue;
         align-content: space-between;
     
     }
@@ -173,7 +170,6 @@ nav a span{
 
         width: 75%;
         height: 100%;
-        background-color: blue;
         align-content: space-between;
         
     }
