@@ -1,0 +1,194 @@
+@mixin config-content(){
+    width: 50%;
+}
+@mixin let-and-right-in-content{
+    .content{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 10px;
+        border: solid 4px #313132;
+        margin-top: 20px;
+        .icon{
+            width: 100%;
+            img{
+                min-width: 40px;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+        }
+        .text-content{
+            max-width: 100%;
+            width: 100%;
+            padding: 10px;
+            padding-right: 10px;
+            h2{
+                margin: 0;
+                color: #0180DC;
+            }
+            p{
+                width: 90%;
+                color: white;
+                margin: 0;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            a{
+                color: #0180DC;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.solutions-and-focus-area{
+    max-width: 98%;
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+    .content-left{
+        padding-left: 40px;
+        @include config-content();
+        h1{
+            color: white;
+            font-size: 4em ;
+            margin: 0;    
+        }
+        h4{
+            color: #0180DC;
+            font-size: 2em;
+            margin: 0;
+            margin-top: 20px; 
+            margin-bottom: 15px;   
+            span{
+                text-decoration:underline 4px;
+            }
+        }
+        h6{
+            font-size: 2em;
+            color: white;
+            margin: 0;
+            margin-top: 15px;
+            span{
+                color: #0180DC
+            }
+        }    
+    }
+    .content-right{
+        @include config-content(); 
+        display: block;
+        .content-text-solution-focus-area{
+            width: 100%;
+            p{
+                font-size: 1.2em;
+                margin: 0;
+                color: white;
+            }
+        }
+        .content-ilustration{
+            width: 100%;
+            display: flex;
+            margin-top: 20px;
+            .left{
+                width: 50%;
+                @include let-and-right-in-content();
+                .main-theme{
+                    background-color: #313132;
+                    margin: 0 auto
+                }
+            }
+            .right{
+                width: 50%;
+                @include let-and-right-in-content();
+            }
+        }
+    }
+}
+
+@media(max-width:1024){
+    .solutions-and-focus-area{
+        .content-left{
+            h1{
+                font-size: 2.5em;
+            }
+            h4{
+                font-size: 1.5em;
+            }
+            h6{
+                font-size: 1em;
+            }    
+        }
+    }
+}
+@media(max-width:870px){
+    .solutions-and-focus-area{
+        max-width: 98%;
+        width: 100%;
+        display: block;
+        margin-bottom: 40px;
+        .content-left{
+            width: 100%;
+            padding: 0;
+            div{
+                text-align: center;
+                width: 100%;
+                h1{
+                    color: white;
+                    font-size: 4em ;
+                        
+                }
+            }
+            h4{
+                display: none;
+                span{
+                    text-decoration:underline 4px;
+                }
+            }
+            h6{
+                display: none
+            }    
+        }
+        .content-right{
+            width: 100%;
+            margin-top: 30px;
+            .content-text-solution-focus-area{
+                width: 100%;
+                p{
+                    font-size: 1.2em;
+                    margin: 0;
+                    color: white;
+                    margin: 0px 40px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:785px){
+    .solutions-and-focus-area{
+        margin-top: 0;
+        .content-left{
+            div{
+                h1{
+                    color: white;
+                    font-size:3em ;
+                    margin: 0;    
+                }
+            }  
+        }
+        .content-right{
+            .content-ilustration{
+                width: 100%;
+                display: block;
+                margin-top: 20px;
+                .left{
+                    width: 100%;
+                }
+                .right{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+}

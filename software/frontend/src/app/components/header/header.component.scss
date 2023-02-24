@@ -1,0 +1,155 @@
+$corPrincipal: #0180DC;
+
+header{
+    width: 100%;
+    height: 10%;
+    z-index: 5;
+    box-shadow: 0px 20px 80px rgba($color: $corPrincipal, $alpha: 0.5);
+    .container-header{
+        background-color:black;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        .logo{
+            width: 20%;
+            margin-left: auto;
+            margin-right: auto;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .nav{
+            width: 65%;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            nav{
+                width: 100%;
+                justify-content: space-between;
+                display: flex;
+                align-items: center;
+                .local{
+                    border-bottom: 3px solid $corPrincipal;
+                }
+                a{
+                    color: white;
+                    font-size: 1.4em;
+                    padding: 5px;
+                    &:hover{
+                        color: $corPrincipal;
+                    }
+                }
+                button{
+                    background-color: transparent;
+                    border: none;
+                    width: 45;
+                    
+                    img{
+                        width: 45px;
+                    }
+                }
+            }
+            .mobile{
+                width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align:center ;
+                display: flex;
+                align-content: space-between;
+                
+                button{
+                    border: none;
+                    background-color: transparent !important;
+                    width: 40px;
+                    height: 40px;
+                    margin: 0 auto;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                }
+                #menu{
+                    background-image: url(../../../assets/img/icon-menu.png);
+                    
+                }
+                #car{
+                    background-image: url(../../../assets/img/icon-car.svg);
+                    
+                }
+            
+            }
+        }
+    }
+}
+@media(max-width: 1366px){
+    header{
+        .container-header{
+            overflow: hidden;
+            .logo{
+                width: 20%;
+            }
+                .nav{
+                    
+                    width: 55%;
+                    nav{
+                        .local{
+                            border-bottom: 3px solid $corPrincipal;
+                        }
+                        a{
+                            color: white;
+                            font-size: 1.1em;
+                            padding: 5px;
+                        }
+                        button{
+                            background-color: transparent;
+                            border: none;
+                            width: 40px;
+                            
+                        }
+                        
+                    }
+                }
+        }
+    }
+}
+
+@media(max-width:785px){
+    header{
+        .container-header{
+            overflow: hidden;
+            .logo{
+                width: 200px;
+            }
+                .nav{
+                    
+                    width: 40%;
+                    .mobile{
+                        width: 60%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        text-align:center ;
+                        display: flex;
+                        div{
+                            width: 50%;
+                            text-align: center;
+                            display: flex;
+                            position: relative;
+                            button{
+                                width: 30px !important;
+                                height: 30px !important;
+                            }
+                            #menu{
+                                background-image: url(../../../assets/img/icon-menu.png);
+                            }
+                            #car{
+                                margin-left: 10px;
+                                background-image: url(../../../assets/img/icon-car.svg);
+                            }
+                        }
+                    }
+                }
+        }
+    }
+}
+
+

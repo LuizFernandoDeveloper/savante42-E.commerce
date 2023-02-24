@@ -1,0 +1,29 @@
+<header>
+    <div class="container-header">
+        <div class="logo">
+            <img src="../../../assets/img/logo-nav-bar.svg" alt="Logo savante 42">
+        </div>
+        <div class="nav" *ngIf="screenConfiguration; else elseBolck">
+            <nav>
+                <a class="local">HOME</a>
+                <a >PRODUTOS</a>
+                <a>SERVIÇOS</a>
+                <a>CONTATO</a>
+                <button><img src="../../../assets/img/icon-car.svg" alt="Carrinho de Compras"></button>
+            </nav>
+        </div>
+        <ng-template #elseBolck>
+            <div class="nav">
+                <div class="mobile">
+                    <div>
+                        <button id="menu" title="Menu"></button>    
+                    </div>
+                    <div>
+                        <button id="car" title="carrinhos de compras"></button>
+                    </div>
+                    
+                </div>
+            </div>
+        </ng-template>
+    </div>
+</header>
