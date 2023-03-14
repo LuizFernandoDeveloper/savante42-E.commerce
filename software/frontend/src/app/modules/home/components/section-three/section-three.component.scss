@@ -1,0 +1,201 @@
+
+@mixin parameters-for-projects-and-experience-header(){
+    text-align: center;
+    color: #0180DC;
+    font-size: 1.5em;
+    h3{
+        margin: 0;
+    }
+}
+@mixin parameters-for-project-and-experience(){
+    width: 50%;
+    color: white;
+    text-align: center;
+    h2{
+        margin: 0;
+    }
+}
+.views-machines-and-equipment{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    max-width: 100%;
+    width: 100%;
+    background-color: #252525;
+    display: flex;
+    flex-wrap: wrap;
+    .left-views{
+        width: 25%;
+        .total-projects-and-years-of-experience{
+            display: flex;
+            .total-projects{
+                @include parameters-for-project-and-experience();
+                .header-total-projects{
+                    @include parameters-for-projects-and-experience-header();
+                }
+            }
+            .years-of-experience{
+                @include parameters-for-project-and-experience();
+                .header-years-of-experience{
+                    @include parameters-for-projects-and-experience-header();
+                }
+            }
+        }
+        .content-of-machines{
+            h1{
+                color: white;
+                margin: 0;
+                margin-top: 30px;
+                margin-left: 40px;
+            }
+            h4{
+                color: #0180DC;
+                font-size: 1.5em;
+                margin: 0;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 40px;
+            }
+            p{
+                color: white;
+                margin: 0;
+                margin-left: 40px;
+                font-size: 1em;
+                margin-bottom: 20px;
+            }
+            div{
+                text-align: center;
+                button{
+                background-color:#313132 ;
+                border-color: #616161;
+                border-radius: 10px;
+                font-size: 1em;
+                padding: 10px;
+                font-weight: bolder;
+                color: white;
+                border: none;
+                cursor: pointer;
+                &:hover{
+                    color: #0180DC;
+                }
+            }
+            }
+            
+        }
+    }
+    .center-views{
+        
+        width:50%;
+        text-align: center;
+        h1{
+            color: #171717;
+            font-size: 8em;
+            margin: 0;
+            font-weight: bolder;
+            position: relative;
+        }
+        img{
+            width: 80%;
+            margin: 0;
+            margin-top: -50px;
+        }
+
+    }
+    .right-views{
+        width: 24%;
+        
+        .header-fixed-technique{
+            width: 100%;
+            height: 20%;
+        }
+        .center-fixed-techinique{
+            height: 60%;
+            div{
+                border-left: 4px solid #0180DC;
+                border-right: 4px solid #0180DC;
+                width: 80%;
+                height: 100%;
+                text-align: center;
+                h1{
+                    color: #0180DC;
+                }
+                h3{
+                    color: white;
+                    span{
+                        color: #0180DC;
+                    }
+                }
+            }
+        }
+        .footer-fixed-technique{
+            width: 100%;
+            height: 20%;
+        }
+    }
+}
+
+@media(max-width:870px){
+    .views-machines-and-equipment{
+        display: block;
+        .left-views{
+            width: 100%;
+            .content-of-machines{
+                h1{
+                    color: white;
+                    margin: 0;
+                    margin-top: 30px;
+                    margin-left: 17%;
+                }
+                h4{
+                    color: #0180DC;
+                    font-size: 1.5em;
+                    margin: 0;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    margin-left: 17%;
+                }
+                p{
+                    color: white;
+                    margin: 0;
+                    margin-left: 17%;
+                    font-size: 1em;
+                    margin-bottom: 20px;
+                }
+                div{
+                    text-align: center;
+                    button{
+                    background-color:#313132 ;
+                    border-color: #616161;
+                    border-radius: 10px;
+                    font-size: 1em;
+                    padding: 10px;
+                    font-weight: bolder;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    &:hover{
+                        color: #0180DC;
+                    }
+                }
+                }
+                
+            }
+        }
+        .center-views{
+            width: 100%;
+        }
+        .right-views{
+            margin-top: 30px;
+            width: 100%;
+            .center-fixed-techinique{
+                margin-bottom: 40px;
+                div{
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}
+@media(max-width:785px){
+
+}

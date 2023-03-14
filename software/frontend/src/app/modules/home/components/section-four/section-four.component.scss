@@ -1,0 +1,250 @@
+@mixin pre-sent-top-and-bottom(){
+    height: 40%;
+    width: 100%;
+}
+
+@mixin top-and-bootom(){
+    width: 10%;
+    height: 556px;
+    min-height: 100%;
+    text-align: center;
+    color: #5f9cf6;
+    .top{
+        @include pre-sent-top-and-bottom();
+        height: 266px;
+    }
+}
+
+@mixin config-button(){
+    height: 100%;
+    background-color: transparent;
+    background-clip: content-box;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        filter: drop-shadow(11px 10px 40px  #0066FF);
+    }
+    &:active{
+        transform: translate(4px);
+        filter: drop-shadow((11px 10px 60px  #5f9cf6));
+    }
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
+.container-our-machines{
+    margin-top: 30px;
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    .button-div-left{
+        @include top-and-bootom();
+        .div-button{
+            width: 100%;
+            height: 20%;
+            button{
+                @include config-button();
+            }
+        }
+    }
+    .content-center{
+    width: 80%;
+    display: block;
+    .content-header{
+        width: 100%;
+        display: flex;
+        .header-left{
+            width: 50%;
+            h1{
+                margin: 0;
+                color: white;
+            }
+            h2{
+                margin: 0;
+                margin-top: 10px;
+                color: #0066FF;
+                span{
+                    border-bottom: #0066FF solid 3px;
+                }
+            }
+        }
+        .header-right{
+            width: 50%;
+            text-align: center;
+            input{
+                width: 80%;
+                height: 60%;
+                border-radius: 40px;
+                border: #0066FF solid 2px;
+                margin-top:10px;
+                font-size: 1.5em;
+                padding-left: 10px;
+                &::placeholder{
+                    padding-left: 10px;
+                    color: #0066FF
+                }
+            }
+        }
+    }
+    .content-main{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .content-card{
+            width: 400px;
+            height: 200px;
+            margin: 20px auto ;
+            background-color: white;
+            display: block;
+            border-radius: 10px;
+            overflow: hidden;
+            .screen-content-card{
+                width: 100%;
+                height: 80%;
+                img{
+                    width: 100%;
+                    height: 120%;
+                }
+            }
+            .description{
+                width: 100%;
+                height: 20%;
+                display: flex;
+                background-color: rgba(25, 25, 25, .9);
+                align-items: end;
+                .content-title{
+                    width: 50%;
+                    height: 100%;
+                    padding-left: 10px;
+                    h3{
+                        margin: 0;
+                        color: white;
+                    }
+                }
+                .button-see-more{
+                    width: 50%;
+                    height: 100%;
+                    text-align: end;
+                    button{
+                        height: 100%;
+                        background-color: #0066FF;
+                        color: white;
+                        bottom: 0;
+                        padding: 0 20px;
+                        font-size: 2em;
+                        border: none;
+                        border-radius: 5px;
+                        &:active{
+                            transform: translate(4px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
+    .button-div-right{
+        @include top-and-bootom();
+        .div-button{
+            width: 100%;
+            height: 20%;
+            button{
+                @include config-button();
+            }
+        }
+    }
+}
+
+@media(max-width:870px){
+    .container-our-machines{
+        .button-div-left{
+            .div-button{
+                margin-top: 280px;
+                button{
+                    
+                }
+            }
+        }
+        .content-center{
+        display: block;
+        .content-header{
+            display: block;
+            .header-left{
+                width: 100%;
+            }
+            .header-right{
+                width: 100%;
+                text-align: center;
+                input{
+                    width: 50%;
+                    height: 100%
+                }
+            }
+        }
+        .content-main{
+            .content-card{
+                .screen-content-card{
+                    img{
+                    }
+                }
+                .description{
+                    .content-title{
+                        h3{
+                        }
+                    }
+                    .button-see-more{
+                        button{
+                        }
+                    }
+                }
+            }
+        }
+        }
+        .button-div-right{
+            @include top-and-bootom();
+            .div-button{
+                margin-top: 280px;
+            }
+        }
+    }
+}
+
+@media(max-width:785px){
+    .container-our-machines{
+        .button-div-left{
+            display: none;
+        }
+        .content-center{
+            width: 100%;
+        display: block;
+        .content-header{
+            display: block;
+            .header-left{
+                width: 100%;
+                padding-left: 10px;
+                margin-bottom: 10px;
+            }
+            .header-right{
+                width: 100%;
+                text-align: center;
+                input{
+                    width: 50%;
+                    height: 100%;
+                    font-size: 1em;
+                }
+            }
+        }
+        .content-main{
+            width: 100%;
+            .content-card{
+                width: 80%;
+            }
+        }
+        }
+        .button-div-right{
+            display: none;
+        }
+    }
+}

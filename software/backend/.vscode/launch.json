@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Application",
+            "request": "launch",
+            "mainClass": "com.savante.aplication.Application",
+            "projectName": "42"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Application<42>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.app.Application",
+            "projectName": "42",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

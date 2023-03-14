@@ -4,7 +4,8 @@ header{
     width: 100%;
     height: 10%;
     z-index: 5;
-    box-shadow: 0px 20px 80px rgba($color: $corPrincipal, $alpha: 0.5);
+    box-shadow: 0px -10px 40px rgba($color: $corPrincipal, $alpha: 0.5);
+    margin-bottom: 40px;
     .container-header{
         background-color:black;
         width: 100%;
@@ -30,13 +31,14 @@ header{
                 justify-content: space-between;
                 display: flex;
                 align-items: center;
-                .local{
+                .active{
                     border-bottom: 3px solid $corPrincipal;
                 }
                 a{
                     color: white;
                     font-size: 1.4em;
                     padding: 5px;
+                    text-decoration: none;
                     &:hover{
                         color: $corPrincipal;
                     }
@@ -51,34 +53,10 @@ header{
                     }
                 }
             }
-            .mobile{
-                width: 60%;
-                margin-left: auto;
-                margin-right: auto;
-                text-align:center ;
-                display: flex;
-                align-content: space-between;
-                
-                button{
-                    border: none;
-                    background-color: transparent !important;
-                    width: 40px;
-                    height: 40px;
-                    margin: 0 auto;
-                    background-size: 100%;
-                    background-repeat: no-repeat;
-                }
-                #menu{
-                    background-image: url(../../../assets/img/icon-menu.png);
-                    
-                }
-                #car{
-                    background-image: url(../../../assets/img/icon-car.svg);
-                    
-                }
-            
-            }
         }
+    }
+    .close-menu{
+        display: none;
     }
 }
 @media(max-width: 1366px){
@@ -115,6 +93,7 @@ header{
 
 @media(max-width:785px){
     header{
+        display: block;
         .container-header{
             overflow: hidden;
             .logo{
@@ -135,19 +114,56 @@ header{
                             display: flex;
                             position: relative;
                             button{
-                                width: 30px !important;
-                                height: 30px !important;
+                                width:  50px !important;
+                                height: 50px !important;
+                                background-color: transparent;
+                                border: none;
+                                &:active{
+                                    transform: translate(4px);
+                                }
                             }
                             #menu{
-                                background-image: url(../../../assets/img/icon-menu.png);
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
                             }
                             #car{
-                                margin-left: 10px;
-                                background-image: url(../../../assets/img/icon-car.svg);
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
                             }
                         }
                     }
                 }
+        }
+        .open-menu{
+            width: 80%;
+            position:relative;
+            z-index: 10;
+            background-color: #0180DC;
+            margin: 0 auto;
+            border-radius:  0px 0px 10px 10px;
+            nav{
+                display: block;
+                margin-top: 0px;
+                div{
+                    width: 100%;                 
+                    a{  
+                        display: block;
+                        text-align: center;
+                        width: 100%;
+                        padding: 10px 0px  10px 0px;
+                        text-decoration: none;
+                        font-size: 1em;
+                        color: white;
+                        &:hover{
+                            background-color: #033a61;
+                        }
+                    }
+                }
+            }
         }
     }
 }

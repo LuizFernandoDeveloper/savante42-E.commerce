@@ -1,0 +1,14 @@
+
+<div class="shape-of-card">
+    <div class="views-img">
+        <img [src]="urlProduct" alt="{{nameProduct}}">
+    </div>
+    <h1>{{nameProduct}}</h1>
+    <div class="content-for-product">
+        <p>
+            {{descriptionProduct}}
+        </p>
+    </div>
+    <h2>{{priceProduct}}</h2>
+    <button title="comprar" (click)="purchase()" value="{{Index}}">Comprar</button>
+</div>

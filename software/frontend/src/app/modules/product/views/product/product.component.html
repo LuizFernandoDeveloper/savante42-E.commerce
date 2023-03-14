@@ -1,0 +1,10 @@
+<app-nav-product></app-nav-product>
+<div class="shape-show-products">
+    <div class="show-products">
+        <app-card-products *ngFor="let product of productList; let i = index"
+        [urlProduct]="product.urlProduct" 
+        [nameProduct]="product.nameProduct"
+        [descriptionProduct]="product.descriptionProduct" 
+        [priceProduct]="product.priceProduct" [Index]="i"></app-card-products>
+    </div>
+</div>

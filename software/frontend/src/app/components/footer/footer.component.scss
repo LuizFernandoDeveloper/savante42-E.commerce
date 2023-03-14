@@ -1,0 +1,18 @@
+footer{
+    text-align: center;
+    margin-top: 20px;
+    max-width: 100%;
+    width: 100%;
+    img{
+        width: 20%;
+    }
+}
+
+@media(max-width:785px){
+    footer{
+        margin-top: 40px;
+        img{
+            width: 60%;
+        }
+    }
+}

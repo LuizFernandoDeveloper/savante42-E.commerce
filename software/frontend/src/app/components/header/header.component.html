@@ -5,25 +5,47 @@
         </div>
         <div class="nav" *ngIf="screenConfiguration; else elseBolck">
             <nav>
-                <a class="local">HOME</a>
-                <a >PRODUTOS</a>
-                <a>SERVIÇOS</a>
-                <a>CONTATO</a>
-                <button><img src="../../../assets/img/icon-car.svg" alt="Carrinho de Compras"></button>
+                <a routerLink="home"     [ngClass]="{'active':onclickButton == true}" (click)="onClickTagA(true)">HOME</a>
+                <a routerLink="products" routerLinkActive="active" (click)="onClickTagA(false)">PRODUTOS</a>
+                <a routerLink="services" routerLinkActive="active" (click)="onClickTagA(false)">SERVIÇOS</a>
+                <a routerLink="contact"  routerLinkActive="active" (click)="onClickTagA(false)">CONTATO</a>
+                <button title="car">
+                    <img src="../../../assets/img/icon-car.svg" alt="Carrinho de Compras">
+                </button>
             </nav>
         </div>
         <ng-template #elseBolck>
             <div class="nav">
                 <div class="mobile">
                     <div>
-                        <button id="menu" title="Menu"></button>    
+                        <button id="menu" title="Menu" (click)="clickButtonMenu()">
+                            <img [src]="srcImgButtomMenu" alt="Menu">
+                        </button>    
                     </div>
                     <div>
-                        <button id="car" title="carrinhos de compras"></button>
+                        <button id="car" title="carrinhos de compras">
+                            <img src="../../../assets/img/icon-car.svg" alt="Carrinho de compras">
+                        </button>
                     </div>
                     
                 </div>
             </div>
         </ng-template>
+    </div>
+    <div [ngClass]="{'open-menu': menuOpenOrClose == true, 'close-menu': menuOpenOrClose == false}">
+        <nav>
+            <div>
+                <a routerLink="home"     [ngClass]="{'active':onclickButton == true}" (click)="onClickTagA(true)" (click)="clickButtonMenu()">HOME</a>
+            </div>
+            <div>
+                <a routerLink="products" routerLinkActive="active" (click)="onClickTagA(false)" (click)="clickButtonMenu()">PRODUTOS</a>
+            </div>
+            <div>
+                <a routerLink="services" routerLinkActive="active" (click)="onClickTagA(false)" (click)="clickButtonMenu()">SERVIÇOS</a>
+            </div>
+            <div>
+                <a routerLink="contact"  routerLinkActive="active" (click)="onClickTagA(false)" (click)="clickButtonMenu()">CONTATO</a>
+            </div>
+        </nav>
     </div>
 </header>

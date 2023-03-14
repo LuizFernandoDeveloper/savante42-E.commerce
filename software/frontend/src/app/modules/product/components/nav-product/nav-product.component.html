@@ -1,0 +1,40 @@
+<div class="nav-container-products">
+    <div class="nav-products">
+        <div class="nav-input">
+            <input type="text" placeholder="Pesquise por um produto">
+        </div>
+        <div class="nav-menu">
+            <button type="button" title="menu produtos" (click)="menuProducts()"><img src="{{urlMenuProducts}}" alt="menu produtos"></button>
+        </div>
+    </div>
+
+    <div [ngClass]="classMenu">
+        <div class="menu-options">
+            <p>Seleciona aqui uma maquina do setor industrial</p>
+            <select [(ngModel)]="valueSelect" name="Maquinas Industrial"  title="maquina industrial" id="maquina-industrial">
+                <option value="0">Maquinas Industrias</option>
+                <option value="1">Maquina de padaria</option>
+                <option value="2">Maquina de sorveteria</option>
+                <option value="3">Maquina de  Fast Food</option>
+            </select>
+        </div>
+        <div class="menu-options">
+            <p>Seleciona aqui uma maquina do setor Aerospcial</p>
+            <select [(ngModel)]="valueSelect" name="Maquinas maquina-Aerospace"  title="maquina Aerospace" id="maquina-Aerospace">
+                <option value="0">Maquinas Aerospaciais</option>
+                <option value="4">Maquina de padaria</option>
+                <option value="5">Maquina de sorveteria</option>
+                <option value="6">Maquina de  Fast Food</option>
+            </select>
+        </div>
+        <div class="menu-options">
+            <p>Seleciona aqui uma maquina do setor Agro</p>
+            <select [(ngModel)]="valueSelect" name="maquina Agro"  title="maquina Agro" id="maquina-Agro">
+                <option value="0">Maquina Agro</option>
+                <option value="7">Maquina de padaria</option>
+                <option value="8">Maquina de sorveteria</option>
+                <option value="9">Maquina de  Fast Food</option>
+            </select>
+        </div>
+    </div>
+</div>
